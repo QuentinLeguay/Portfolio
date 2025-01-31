@@ -15,35 +15,25 @@ const ProjectsPage: React.FC = () => {
         My Projects
       </motion.h1>
 
-      {/* Public projects */}
-      <div className="mt-8 max-w-3xl text-center text-lg text-gray-400">
-        <p className="font-bold mb-4">Area Project</p>
-        <p>
-          The "Area" project is a personal endeavor that showcases my skills in
-          software development, UI/UX design, and system-level programming. It
-          focuses on delivering a seamless user experience while integrating
-          multimedia processing and modern technologies.
-        </p>
-        <p className="mt-4">
-          You can check out the full repository and get more details on the
-          project by visiting my GitHub.
-        </p>
+      {/* GitHub Repository */}
+      <div className="mt-8 text-center text-lg text-gray-400 max-w-xl">
+        <p className="font-bold mb-4">Here are of my best projects :</p>
         <a
           href="https://github.com/QuentinLeguay/Area"
           target="_blank"
-          className="text-blue-500 hover:underline mt-4 inline-block"
+          className="text-blue-500 hover:underline flex items-center justify-center"
         >
-          GitHub - Area Project
+          GitHub - Area Project &nbsp;
+          <img src="/Logos/PerimeterIcon.png" alt="Perimeter Icon" className="h-8 w-8"/>
         </a>
-        <br />
         <a
           href="https://github.com/QuentinLeguay/R-Type"
           target="_blank"
-          className="text-blue-500 hover:underline"
+          className="text-blue-500 hover:underline flex items-center justify-center"
         >
-          GitHub - R-Type Project
+          GitHub - R-Type Project &nbsp;
+          <img src="/Logos/R-Type_Logo.png" alt="Perimeter Icon" className="h-8 w-16"/>
         </a>
-        <br />
         <a
           href="https://github.com/QuentinLeguay/Dante"
           target="_blank"

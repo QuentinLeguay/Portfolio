@@ -39,58 +39,6 @@ const AboutPage: React.FC = () => {
         </p>
       </div>
 
-      {/* Skills Section */}
-      <div className="mt-8 text-center">
-        <h2 className="text-3xl font-semibold">My Skills</h2>
-        <ul className="mt-4 text-lg text-gray-400">
-          <li>
-            ⚡ C &nbsp;
-            <i className="devicon-c-plain colored"></i>
-            , C++ &nbsp;
-            <i className="devicon-cplusplus-plain colored"></i>
-            &nbsp; and C# &nbsp;
-            <i className="devicon-csharp-plain colored"></i>
-            &nbsp; Programming{" "}
-          </li>
-          <li>
-            ⚡ React-native &nbsp;
-            <i className="devicon-react-original colored"></i>
-            &nbsp; mobile application{" "}
-          </li>
-          <li>
-            ⚡ JavaScript &nbsp;
-            <i className="devicon-javascript-plain colored"></i>
-            &nbsp; & TypeScript &nbsp; 
-            <i className="devicon-typescript-plain colored"></i>
-            &nbsp; Development{" "}
-          </li>
-          <li>
-            ⚡ Python &nbsp;
-            <i className="devicon-python-plain colored"></i>
-            &nbsp; Development{" "}
-          </li>
-            <li className="flex items-center justify-center">
-            ⚡ Game Modding (RimWorld&nbsp;
-            <img src="/Logos/rimworld.svg" alt="RimWorld Logo" className="h-12 w-12" />
-            &nbsp;, SSBU&nbsp;
-            <img src="/Logos/ssbu.svg" alt="Super Smash Bros. Ultimate Logo" className="h-12 w-12" />
-            &nbsp;){" "}
-            </li>
-          <li>
-            ⚡ Multimedia File Processing{" "}
-            <i className="devicon-ffmpeg-plain colored"></i>
-          </li>
-          <li>
-            ⚡ UI/UX Design & Color Management{" "}
-            <i className="devicon-sketch-plain colored"></i>
-          </li>
-          <li>
-            ⚡ Working with External Libraries and APIs{" "}
-            <i className="devicon-nodejs-plain colored"></i>
-          </li>
-        </ul>
-      </div>
-
       {/* Personal Philosophy */}
       <div className="mt-8 text-center max-w-xl">
         <h2 className="text-3xl font-semibold">My Credo</h2>
