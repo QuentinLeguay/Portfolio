@@ -1,5 +1,5 @@
 'use client'
-2
+
 import { motion } from "framer-motion";
 
 const HomePage: React.FC = () => {
@@ -21,11 +21,9 @@ const HomePage: React.FC = () => {
       </p>
       <p className="mt-2 text-center text-lg text-gray-400 max-w-2xl">
         I'm a passionate software developer with expertise in multimedia file
-        processing, UI color management, and modding games. Currently, I'm working
-        on RimWorld modding, improving Python video playback, and learning new
-        technologies to enhance my skills.
+        processing, UI color management, and modding games. I have experience with 
+        various programming languages, including C, C++, Python, and JavaScript.
       </p>
-
       {/* Personal Statement */}
       <div className="mt-8 text-center text-lg text-gray-400 max-w-xl">
         <p>
