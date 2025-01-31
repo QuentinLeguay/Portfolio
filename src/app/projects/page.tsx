@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
 import { motion } from "framer-motion";
 
 const ProjectsPage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-6">
-      {/* Header with animation */}
+      {/* header */}
       <motion.h1
         className="text-5xl font-bold"
         initial={{ opacity: 0, y: -20 }}
@@ -15,7 +15,7 @@ const ProjectsPage: React.FC = () => {
         My Projects
       </motion.h1>
 
-      {/* Area Project */}
+      {/* Public projects */}
       <div className="mt-8 max-w-3xl text-center text-lg text-gray-400">
         <p className="font-bold mb-4">Area Project</p>
         <p>
@@ -53,7 +53,7 @@ const ProjectsPage: React.FC = () => {
         </a>
       </div>
 
-      {/* Additional Projects */}
+      {/* Personnal projects */}
       <div className="mt-12 max-w-3xl text-center text-lg text-gray-400">
         <p className="font-bold mb-4">Other Projects</p>
         <p>
@@ -65,16 +65,16 @@ const ProjectsPage: React.FC = () => {
         </p>
         <ul className="list-disc list-inside mt-6 text-left">
           <li>
-            <strong>RimWorld Modding:</strong> Updating mods to be compatible with
-            new game versions.
+            <strong>RimWorld Modding:</strong> Updating mods to be compatible
+            with new game versions.
           </li>
           <li>
             <strong>SSBU Modding:</strong> Creating and sharing mods for Super
             Smash Bros. Ultimate.
           </li>
           <li>
-            <strong>React Native Mobile App:</strong> A mobile app developed using
-            React Native, designed for ease of use and performance.
+            <strong>React Native Mobile App:</strong> A mobile app developed
+            using React Native, designed for ease of use and performance.
           </li>
           <li>
             <strong>JavaScript Web App:</strong> A web application focused on

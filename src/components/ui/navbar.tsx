@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
             <Button variant="outline">Experience</Button>
           </Link>
           <Link href="/CV" passHref>
-            <Button variant="outline">CV</Button>
+            <Button variant="outline">My resume</Button>
           </Link>
           <Button
             className="flex items-center"
@@ -42,15 +42,17 @@ const Navbar: React.FC = () => {
               passHref
             >
               <Mail className="w-5 h-5 mr-2" />
-              <span>Contact</span>
+              <span>Contact me</span>
             </Link>
           </Button>
+          <div className="h-6 border-l border-gray-600 mx-2"></div>
           <Link
             href="https://github.com/QuentinLeguay"
             target="_blank"
             passHref
+            style={{ margin : "0px" }}
           >
-            <Button variant="ghost">
+            <Button variant="ghost" style={{ padding: "px-2" }}>
               <Github className="w-5 h-5" />
             </Button>
           </Link>

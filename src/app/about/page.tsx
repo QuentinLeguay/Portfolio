@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-// app/about/page.tsx (About Page)
+import "devicon/devicon.min.css";
 
 const AboutPage: React.FC = () => {
   return (
@@ -29,12 +29,13 @@ const AboutPage: React.FC = () => {
           complex problems, and make things work as smoothly as possible.
         </p>
         <p className="mt-4 text-lg text-gray-400">
-            During my studies, I was able to work on a variety of projects, 
-            including a React-native mobile application, a JavaScript-based 
-            web application, and a TypeScript-based web application. 
-            I also had the opportunity to work on developping a small game (R-Type).<br/>
-            I have experience working with external libraries and APIs, 
-            and I'm always looking for new opportunities to collaborate and learn from others.
+          During my studies, I was able to work on a variety of projects,
+          including a React-native mobile application, a JavaScript-based web
+          application, and a TypeScript-based web application. I also had the
+          opportunity to work on developping a small game (R-Type).
+          <br />I have experience working with external libraries and APIs, and
+          I'm always looking for new opportunities to collaborate and learn from
+          others.
         </p>
       </div>
 
@@ -42,14 +43,51 @@ const AboutPage: React.FC = () => {
       <div className="mt-8 text-center">
         <h2 className="text-3xl font-semibold">My Skills</h2>
         <ul className="mt-4 text-lg text-gray-400">
-          <li>⚡ C, C++, C# Programming</li>
-          <li>⚡ React-native mobile application</li>
-          <li>⚡ JavaScript & TypeScript Development</li>
-          <li>⚡ Python Development</li>
-          <li>⚡ Game Modding (RimWorld, SSBU)</li>
-          <li>⚡ Multimedia File Processing</li>
-          <li>⚡ UI/UX Design & Color Management</li>
-          <li>⚡ Working with External Libraries and APIs</li>
+          <li>
+            ⚡ C &nbsp;
+            <i className="devicon-c-plain colored"></i>
+            , C++ &nbsp;
+            <i className="devicon-cplusplus-plain colored"></i>
+            &nbsp; and C# &nbsp;
+            <i className="devicon-csharp-plain colored"></i>
+            &nbsp; Programming{" "}
+          </li>
+          <li>
+            ⚡ React-native &nbsp;
+            <i className="devicon-react-original colored"></i>
+            &nbsp; mobile application{" "}
+          </li>
+          <li>
+            ⚡ JavaScript &nbsp;
+            <i className="devicon-javascript-plain colored"></i>
+            &nbsp; & TypeScript &nbsp; 
+            <i className="devicon-typescript-plain colored"></i>
+            &nbsp; Development{" "}
+          </li>
+          <li>
+            ⚡ Python &nbsp;
+            <i className="devicon-python-plain colored"></i>
+            &nbsp; Development{" "}
+          </li>
+            <li className="flex items-center justify-center">
+            ⚡ Game Modding (RimWorld&nbsp;
+            <img src="/Logos/rimworld.svg" alt="RimWorld Logo" className="h-12 w-12" />
+            &nbsp;, SSBU&nbsp;
+            <img src="/Logos/ssbu.svg" alt="Super Smash Bros. Ultimate Logo" className="h-12 w-12" />
+            &nbsp;){" "}
+            </li>
+          <li>
+            ⚡ Multimedia File Processing{" "}
+            <i className="devicon-ffmpeg-plain colored"></i>
+          </li>
+          <li>
+            ⚡ UI/UX Design & Color Management{" "}
+            <i className="devicon-sketch-plain colored"></i>
+          </li>
+          <li>
+            ⚡ Working with External Libraries and APIs{" "}
+            <i className="devicon-nodejs-plain colored"></i>
+          </li>
         </ul>
       </div>
 
@@ -57,7 +95,7 @@ const AboutPage: React.FC = () => {
       <div className="mt-8 text-center max-w-xl">
         <h2 className="text-3xl font-semibold">My Credo</h2>
         <p className="mt-4 text-lg text-gray-400">
-          "Il faut vivre pour manger et non manger pour vivre." — A simple, yet
+          "You shall live to eat and not eat to live." — A simple, yet
           profound philosophy that reflects how I approach my work and life. I
           believe in living fully, making meaningful contributions, and enjoying
           the process of creating and solving problems.

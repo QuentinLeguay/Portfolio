@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className="bg-gray-100">
+      <body className="bg-gray-900 min-h-screen" style={{ fontFamily: "var(--font-geist-sans)" }}>
         <div className="min-h-screen flex flex-col">
           {!isRootPage && <Navbar />}{" "}
           <main className="flex-grow">{children}</main>
