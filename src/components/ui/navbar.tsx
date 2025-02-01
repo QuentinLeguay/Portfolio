@@ -16,18 +16,19 @@ const Navbar: React.FC = () => {
 
         <div className="space-x-4 flex items-center">
           <Link href="/about" passHref>
-            <Button variant="outline">About Me</Button>
+            <Button variant="outline" name="About me Button">About Me</Button>
           </Link>
           <Link href="/projects" passHref>
-            <Button variant="outline">Projects</Button>
+            <Button variant="outline" name="Projects Button">Projects</Button>
           </Link>
           <Link href="/experience" passHref>
-            <Button variant="outline">Experience</Button>
+            <Button variant="outline" name="Experience Button">Experience</Button>
           </Link>
           <Link href="/CV" passHref>
-            <Button variant="outline">My resume</Button>
+            <Button variant="outline" name="My Resume Button">My resume</Button>
           </Link>
           <Button
+            name="Contact me Button"
             className="flex items-center"
             style={{
               backgroundColor: "blue",
@@ -47,12 +48,13 @@ const Navbar: React.FC = () => {
           </Button>
           <div className="h-6 border-l border-gray-600 mx-2"></div>
           <Link
+            aria-label="GitHub - Quentin Leguay"
             href="https://github.com/QuentinLeguay"
             target="_blank"
             passHref
             style={{ margin : "0px" }}
           >
-            <Button variant="ghost" style={{ padding: "px-2" }}>
+            <Button variant="ghost" style={{ padding: "px-2" }} name="GitHub Button">
               <Github className="w-5 h-5" />
             </Button>
           </Link>

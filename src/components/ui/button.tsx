@@ -5,7 +5,7 @@ type ButtonProps = {
   variant?: "default" | "outline" | "ghost";
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button: React.FC<ButtonProps> = ({ children, variant = "default", ...props }) => {
+export const Button: React.FC<ButtonProps & { name?: string }> = ({ children, variant = "default", name, ...props }) => {
   const baseStyles = "px-4 py-2 rounded-lg font-semibold transition-all";
   const variants = {
     default: "bg-blue-500 text-white hover:bg-blue-600",
@@ -14,7 +14,7 @@ export const Button: React.FC<ButtonProps> = ({ children, variant = "default", .
   };
 
   return (
-    <button className={`${baseStyles} ${variants[variant]}`} {...props}>
+    <button className={`${baseStyles} ${variants[variant]}`} aria-label={name} {...props}>
       {children}
     </button>
   );

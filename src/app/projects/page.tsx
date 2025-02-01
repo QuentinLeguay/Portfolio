@@ -20,6 +20,7 @@ const ProjectsPage: React.FC = () => {
         <p className="font-bold mb-4">Here are of my best projects :</p>
         <a
           href="https://github.com/QuentinLeguay/Area"
+          aria-label="GitHub - Area Project"
           target="_blank"
           className="text-blue-500 hover:underline flex items-center justify-center"
         >
@@ -27,6 +28,7 @@ const ProjectsPage: React.FC = () => {
           <img src="/Logos/PerimeterIcon.png" alt="Perimeter Icon" className="h-8 w-8"/>
         </a>
         <a
+          aria-label="GitHub - R-Type Project"
           href="https://github.com/QuentinLeguay/R-Type"
           target="_blank"
           className="text-blue-500 hover:underline flex items-center justify-center"
@@ -35,6 +37,7 @@ const ProjectsPage: React.FC = () => {
           <img src="/Logos/R-Type_Logo.png" alt="Perimeter Icon" className="h-8 w-16"/>
         </a>
         <a
+          aria-label="GitHub - Dante Project"
           href="https://github.com/QuentinLeguay/Dante"
           target="_blank"
           className="text-blue-500 hover:underline"
