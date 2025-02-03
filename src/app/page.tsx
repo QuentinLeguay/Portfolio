@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
+require('dotenv').config()
 
 const HomePage: React.FC = () => {
   return (

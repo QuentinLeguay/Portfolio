@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Switch from "@/components/ui/switch";
+import PinnedRepos from "@/components/ui/getPinnedRepo";
 
 const ProjectsPage: React.FC = () => {
   const [divState, setDivState] = useState("recap");
@@ -25,7 +26,7 @@ const ProjectsPage: React.FC = () => {
       >
         My Projects
       </motion.h1>
-      <Switch toggleDiv={toggleDiv} title1="recap" title2="project list"></Switch>
+      <Switch toggleDiv={toggleDiv} title1="Recap" title2="Project list"></Switch>
 
       {/* Recap Section */} 
       <div id="recap" hidden={divState !== "recap"} className={`${divState !== "recap" ? "hidden" : "" } flex flex-col items-center justify-center bg-gray-900 text-white p-6`}>
@@ -101,7 +102,7 @@ const ProjectsPage: React.FC = () => {
 
       {/* Project list section */}
       <div id="project_list" hidden={divState !== "project_list"} className={`${divState !== "recap" ? "hidden" : "" } flex flex-col items-center justify-center bg-gray-900 text-white p-6`}>
-
+        <PinnedRepos />
       </div>
     </div>
   );
