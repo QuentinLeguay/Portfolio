@@ -1,0 +1,29 @@
+.switchBar {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    border-radius: 15;
+    border-width: 2;
+    border-color: #444444;
+    margin-top: 20;
+}
+
+.switch{
+    width: 50%;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.switch.on{
+    background-color: #333333;
+    border: inset;
+    border-color: #444444;
+}
+
+.switch.off{
+    background-color: #888888;
+    border: outset;
+    border-color: #999999;
+}
