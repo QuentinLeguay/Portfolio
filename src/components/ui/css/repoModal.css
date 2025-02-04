@@ -1,0 +1,76 @@
+.repo-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.repo-modal-header {
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo-modal-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.repo-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #999;
+}
+
+.repo-modal-close:hover {
+    color: #333;
+}
+
+.repo-modal-body {
+    padding: 16px;
+}
+
+.repo-modal-footer {
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+.repo-modal-footer button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.repo-modal-footer .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.repo-modal-footer .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.repo-modal-footer .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.repo-modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+}

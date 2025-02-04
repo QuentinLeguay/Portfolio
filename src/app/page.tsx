@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from "framer-motion";
-require('dotenv').config()
 
 const HomePage: React.FC = () => {
   return (
@@ -21,7 +20,7 @@ const HomePage: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Quentin's Portfolio
+        Quentin&apos;s Portfolio
       </motion.h1>
 
       {/* about me */}
@@ -29,13 +28,13 @@ const HomePage: React.FC = () => {
         Software Developer | Multimedia & UI Enthusiast | C++ Expert
       </p>
       <p className="mt-2 text-center text-lg text-gray-400 max-w-2xl">
-        I'm a passionate software developer with expertise in multimedia file
+        I&apos;m a passionate software developer with expertise in multimedia file
         processing, UI color management, and modding games. I have experience with 
         various programming languages, including C, C++, Python, and JavaScript.
       </p>
       <div className="mt-8 text-center text-lg text-gray-400 max-w-xl">
         <p>
-          My credo: <em>"You shall live to eat and not eat to live"</em>
+          My credo: <em>&quot;You shall live to eat and not eat to live&quot;</em>
         </p>
         <p className="mt-4">
           Explore my work, check out my CV, and get in touch for collaboration

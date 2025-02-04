@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         <Link href="/" passHref>
           <h1 className="text-3xl font-bold cursor-pointer">
-            Quentin's Portfolio
+            Quentin&apos;s Portfolio
           </h1>
         </Link>
 

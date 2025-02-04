@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Card from "./card";
 
 interface Repository {
   name: string;
@@ -16,8 +17,8 @@ const PinnedRepos: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const GITHUB_LOGIN = process.env.GITHUB_LOGIN;
-  console.log("GITHUB_LOGIN", GITHUB_LOGIN);
+  const GITHUB_LOGIN = process.env.NEXT_PUBLIC_GITHUB_LOGIN;
+  const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
   useEffect(() => {
     const fetchPinnedRepos = async () => {
@@ -45,12 +46,12 @@ const PinnedRepos: React.FC = () => {
         }
             `,
             variables: {
-              username: process.env.GITHUB_LOGIN,
+              username: GITHUB_LOGIN,
             },
           },
           {
             headers: {
-              Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+              Authorization: `Bearer ${GITHUB_TOKEN}`,
             },
           }
         );
@@ -72,20 +73,18 @@ const PinnedRepos: React.FC = () => {
   if (error) return <div>{error}</div>;
 
   return (
-    <div>
+    <div className=" flex flex-col items-center justify-center bg-gray-900 text-white p-6" style={{maxWidth: "65%"}}>
       <h1>Pinned Repositories</h1>
-      <ul>
         {repos.map((repo) => (
-          <li key={repo.name}>
-            <a href={repo.url} target="_blank" rel="noopener noreferrer">
-              {repo.name}
-            </a>
-            <p>{repo.description}</p>
-            <p>Language: {repo.primaryLanguage?.name ?? "Unknown"}</p>
-            <p>Stars: {repo.stargazerCount}</p>
-          </li>
+          <Card
+            key={repo.name}
+            title={repo.name}
+            description={repo.description}
+            url={repo.url}
+            language={repo.primaryLanguage?.name ?? "Unknown"}
+            stars={repo.stargazerCount}
+            />
         ))}
-      </ul>
     </div>
   );
 };

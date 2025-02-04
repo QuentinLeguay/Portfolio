@@ -26,7 +26,7 @@ const ProjectsPage: React.FC = () => {
       >
         My Projects
       </motion.h1>
-      <Switch toggleDiv={toggleDiv} title1="Recap" title2="Project list"></Switch>
+      <Switch toggleDiv={toggleDiv} title1="recap" title2="project list"></Switch>
 
       {/* Recap Section */} 
       <div id="recap" hidden={divState !== "recap"} className={`${divState !== "recap" ? "hidden" : "" } flex flex-col items-center justify-center bg-gray-900 text-white p-6`}>
@@ -73,7 +73,7 @@ const ProjectsPage: React.FC = () => {
         <div className="mt-12 max-w-3xl text-center text-lg text-gray-400">
           <p className="font-bold mb-4">Other Projects</p>
           <p>
-            In addition to the "Area" project, I have worked on several other
+            In addition to the &quot;Area&quot; project, I have worked on several other
             interesting projects, including game modding for RimWorld and Super
             Smash Bros. Ultimate (SSBU), mobile applications in React Native,
             and web applications built with JavaScript and TypeScript. More
@@ -101,7 +101,7 @@ const ProjectsPage: React.FC = () => {
       </div>
 
       {/* Project list section */}
-      <div id="project_list" hidden={divState !== "project_list"} className={`${divState !== "recap" ? "hidden" : "" } flex flex-col items-center justify-center bg-gray-900 text-white p-6`}>
+      <div id="project_list" hidden={divState === "recap"} className={`${divState === "recap" ? "hidden" : "" } flex flex-col items-center justify-center bg-gray-900 text-white p-6`}>
         <PinnedRepos />
       </div>
     </div>

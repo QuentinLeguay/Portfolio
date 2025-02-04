@@ -42,3 +42,8 @@ next-env.d.ts
 
 # dist folders 
 **/dist
+
+# Ignore build outputs
+.next/
+node_modules/
+dist/
