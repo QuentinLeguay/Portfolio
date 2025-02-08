@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
               className="flex items-center"
               passHref
             >
-              <Mail className="w-5 h-5 mr-2 fill-white" />
+              <Mail className="w-5 h-5 mr-2" />
               <span className="text-white">Contact me</span>
             </Link>
           </Button>

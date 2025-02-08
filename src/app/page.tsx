@@ -7,14 +7,16 @@ const HomePage: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-gray-900 text-white p-6">
       {/* header */}
-      <motion.img
-        src="/CV/image_CV.png"
-        alt="A Picture of the handsome person that I am"
-        className="w-64 h-64 rounded-full mb-6 mt-6"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-      />
+      <Link href={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} style={{cursor: "default"}}>
+        <motion.img
+          src="/CV/image_CV.png"
+          alt="A Picture of the handsome person that I am"
+          className="w-64 h-64 rounded-full mb-6 mt-6"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        />
+      </Link>
       <motion.h1
         className="text-5xl font-bold"
         initial={{ opacity: 0, y: -20 }}

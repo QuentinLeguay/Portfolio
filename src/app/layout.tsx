@@ -12,15 +12,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isRootPage =
-    typeof window !== "undefined" && window.location.pathname === "/";
 
   return (
     <html lang="en">
       <head></head>
       <body className="bg-gray-900 min-h-screen" style={{ fontFamily: "var(--font-geist-sans)" }}>
         <div className="min-h-screen flex flex-col">
-          {!isRootPage && <Navbar />}{" "}
+          <Navbar/>
           <main className="flex-grow">{children}</main>
         </div>
       </body>
