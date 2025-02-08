@@ -73,18 +73,20 @@ const PinnedRepos: React.FC = () => {
   if (error) return <div>{error}</div>;
 
   return (
-    <div className=" flex flex-col items-center justify-center bg-gray-900 text-white p-6" style={{maxWidth: "65%"}}>
+    <div className="flex flex-col items-center justify-center bg-gray-900 text-white p-6" >
       <h1>Pinned Repositories</h1>
+      <div className="items-center justify-center bg-gray-900 text-white p-6 flex flex-row flex-wrap" style={{maxWidth: '65%'}} >
         {repos.map((repo) => (
           <Card
-            key={repo.name}
-            title={repo.name}
-            description={repo.description}
-            url={repo.url}
-            language={repo.primaryLanguage?.name ?? "Unknown"}
-            stars={repo.stargazerCount}
-            />
+          key={repo.name}
+          title={repo.name}
+          description={repo.description}
+          url={repo.url}
+          language={repo.primaryLanguage?.name ?? "Unknown"}
+          stars={repo.stargazerCount}
+          />
         ))}
+      </div>
     </div>
   );
 };

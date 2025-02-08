@@ -18,10 +18,8 @@ const RepoModal: React.FC<RepoModalProps> = ({ title, description, url, language
         <Modal
             show={show}
             onHide={handleClose}
-            backdrop="static" // Prevents closing the modal by clicking outside
-            keyboard={false} // Prevents closing the modal with the ESC key
-            centered // Centers the modal vertically and horizontally
-            dialogClassName="modal-popup" // Custom class for the modal dialog
+            centered
+            dialogClassName="modal-popup"
         >
             <Modal.Header closeButton>
                 <Modal.Title>{title}</Modal.Title>

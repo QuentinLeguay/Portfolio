@@ -1,6 +1,7 @@
-'use client'
+"use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HomePage: React.FC = () => {
   return (
@@ -28,17 +29,26 @@ const HomePage: React.FC = () => {
         Software Developer | Multimedia & UI Enthusiast | C++ Expert
       </p>
       <p className="mt-2 text-center text-lg text-gray-400 max-w-2xl">
-        I&apos;m a passionate software developer with expertise in multimedia file
-        processing, UI color management, and modding games. I have experience with 
-        various programming languages, including C, C++, Python, and JavaScript.
+        I&apos;m a passionate software developer with expertise in multimedia
+        file processing, UI color management, and modding games. I have
+        experience with various programming languages, including C, C++, Python,
+        and JavaScript.
       </p>
       <div className="mt-8 text-center text-lg text-gray-400 max-w-xl">
         <p>
-          My credo: <em>&quot;You shall live to eat and not eat to live&quot;</em>
+          My credo:{" "}
+          <em>&quot;Ye shall live to eat and not eat to live&quot;</em>
         </p>
         <p className="mt-4">
           Explore my work, check out my CV, and get in touch for collaboration
           opportunities!
+        </p>
+      </div>
+
+      {/* Link to my projects */}
+      <div>
+        <p className="mt-4 text-lg text-gray-400">
+          To see my best projects click <a href="/projects">here</a>
         </p>
       </div>
     </div>
